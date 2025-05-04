@@ -3,7 +3,10 @@ services:
     name: codequest-backend
     env: node
     plan: free
+    rootDir: server  # 👈 this is the key part!
     buildCommand: npm install
-    startCommand: npm start  # or server.js if that's your main file
-    
-      
+    startCommand: node index.js  # or whatever your main file is
+    envVars:
+      - key: PORT
+        value: 10000
+      -
