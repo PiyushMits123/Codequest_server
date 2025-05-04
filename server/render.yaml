@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: codequest-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start  # or server.js if that's your main file
+    
+      
