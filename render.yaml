@@ -4,8 +4,6 @@ services:
     env: node
     plan: free
     buildCommand: npm install
-    startCommand: node index.js  # or server.js if that's your main file
-    envVars:
-      - key: PORT
-        value: 10000
+    startCommand: npm start  # or server.js if that's your main file
+    
       
